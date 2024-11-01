@@ -18,13 +18,10 @@ for i in range(n):
             for j in range(n):
                 A[j][i] = num
                 num -= 1
-            for j in range(n-1,-1,-1):
-                A[j][i] = num
-                num -= 1
         else:
             for j in range(n-1,-1,-1):
                 A[j][i] = num
                 num -= 1
-                
+
 for row in A:
     print(*row)
